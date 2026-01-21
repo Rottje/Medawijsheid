@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- CC BY-ND-SA 4.0 --> 
+<html lang="">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Genereer een karakter</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="author" content="Anicca" />
+  <meta name="description" content="" />
+  <meta name="keywords" contents=""/>
+  <!-- <link rel="icon" href="icon.png"> -->
+</head>
+
+<style>
+body {
+    font-family: Verdana, sans-serif;
+    font-weight: 100;
+    width: 100vh;
+    height: 100vh;
+    overflow: hidden;
+    color: #D6D4D7;
+    font-size: 3.5vh;
+    background: #1D1C1E;
+
+    font-family: Arial, sans-serif;
+}
+
+div {
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+}
+
+.header {
+    font-weight: 900;
+}
+
+.inner_text {
+    left: 7%;
+    position: relative;
+    font-weight: 100;
+}
+
+.textbox {
+    height: auto;
+    right: 25vw;
+    max-height: 30vh;
+    visibility: hidden;
+}
+
+#background_div {
+    top: 30vh;
+}
+
+#body {
+    width: 30vh;
+    height: 50vh;
+    left: 25vw;
+    top: 35vh;
+}
+
+
+#favourite_div {
+    top: 45vh;
+}
+
+#head {
+    width: 30vh;
+    height: 30vh;
+    left: 25vw;
+    top: 10vh;
+}
+
+#interests_div {
+    bottom: 30vh;
+}
+
+#randomiser_button {
+    width: 100vw;
+    height: 10vh;
+    left: 0px;
+    bottom: 0px;
+    text-align: center;
+    cursor: pointer;
+    border-top: 2px solid white;
+
+    font-family: Tahoma, sans-serif;
+    font-size: 3vw;
+}
+
+#randomiser_button:hover {
+    color: #777777;
+}
+#randomiser_button:active {
+    color: #333333;
+}
+
+</style>
+
+<script src="set.js"></script>
+<script src="main.js"></script>
+
+<body>
+    <div id="main">
+        <!--containers-->
+        <div id="body"></div>
+        <div id="head"></div>
+        <div id="background_div" class="textbox">
+            <span class="header">Achtergrond</span>
+            <div id="background" class="inner_text"></div>
+        </div>
+        <div id="interests_div" class="textbox">
+            <span class="header">Interesses</span>
+            <div id="interests" class="inner_text"></div>
+        </div>
+        <div id="favourite_div" class="textbox">
+            <span class="header">Meest bezochte website</span>
+            <div id="favourite" class="inner_text"></div>
+        </div>
+        <div id="location_div" class="textbox">
+            <span class="header">Locatie</span>
+            <div id="location" class="inner_text"></div>
+        </div>
+        <!--gui-->
+        <div id="randomiser_button">GENEREER KARAKTER</div>
+    </div>
+</body>
+
+</html>
